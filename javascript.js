@@ -29,7 +29,7 @@ function setOrdine(){
             quant[i].innerHTML = numqtà;
             count++;
             if(numqtà > maxAmount){
-                alert("Non puoi ordinare così tanti oggetti di un solo tipo");
+                alert("Non puoi ordinare cosi' tanti oggetti di un solo tipo");
                 quant[i].innerHTML = maxAmount;
             }
         }
@@ -40,13 +40,13 @@ function setOrdine(){
         var tmp_qty = document.getElementById("qtyx").insertCell(0);
         if(Number(document.getElementById("it_qty").value)>maxAmount){
             tmp_qty.innerHTML = maxAmount;  
-             alert("too many items ordered");
+             alert("Troppi oggetti ordinati");
         }else
             tmp_qty.innerHTML = document.getElementById("it_qty").value; 
     }
     
     
-    showForm();
+    mostraForm();
     
 };
 
